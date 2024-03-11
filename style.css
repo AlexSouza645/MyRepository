@@ -291,14 +291,18 @@ color:#ccc
 /* Footer Style */
 footer{
   position:relative;
-  display: grid;
+  display: relative;
   grid-template-columns:400px repeat(3, 1fr);
   gap 2 rem
 }
+footer .column{
+  position:relative;
+  display:inline
+}
 
 footer .column .logo{
-  max-width:100px;
- 
+  max-width:200px;
+ position: center;
   margin-bottom:1.2rem 
 }
 
