@@ -99,7 +99,7 @@ header {
   gap: 2rem;
 }
 
-header .content h3{
+header .content h4{
   margin-top: 1 rem;
   color: #ccc;
   font-size: 3 rem;
@@ -187,10 +187,10 @@ section .header {
   border-radius:5px
 }
 
-.features .card h3{
+.features .card h4{
   margin-bottom: 0.5rem;
   color:#fff;
-  font-size:4rem;
+  font-size:2rem;
   font-weight: 600
 }
 .features .card p{
@@ -255,18 +255,20 @@ color:#ccc
 
 .pricing .card h3{
   color: #fff;
-  padding-bottom:1rem;
-  margin-bottom:2rem;
+  padding-bottom:1 rem;
+  margin-bottom:2 rem;
   font-size:2rem;
   font-weight:600;
-  border-bottom:2px dashed #fff
+  border-bottom:2px dashed #fff;
+  
 
 
 }
 
 .pricing .card p{
   color:#fff;
-  margin-bottom:0.75rem;
+  
+  margin-top:2.5rem;
 }
 
 .pricing .card p i {
@@ -276,12 +278,13 @@ color:#ccc
 }
 
 
-.pricing .card button{
+.pricing .card button {
   color:#fff;
   background-color: transparent;
   border: 2px solid #fff;
-  margin-top:22px;
-  justify-content: center
+  margin-top:3rem;
+  justify-content: center;
+  margin-bottom:0.2rem;
 }
 
 .pricing .card button:hover{
