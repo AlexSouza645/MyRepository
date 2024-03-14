@@ -21,6 +21,7 @@ function smoothScrollTo(element) {
 const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");
 const link3 = document.getElementById("link3");
+const link4 = document.getElementById("link4");
 
 link1.addEventListener("click", () => {
   // Rola para o primeiro elemento com classe "header"
@@ -36,10 +37,16 @@ link2.addEventListener("click", () => {
   }
 });
 
-link3.addEventListener("click", () => {
-  // Rola para o primeiro elemento com classe "column"
-  const columnElement = document.querySelector(".column");
-  smoothScrollTo(columnElement);
+// link3.addEventListener("click", () => {
+//   // Rola para o primeiro elemento com classe "column"
+//   const columnElement = document.querySelector(".column");
+//   smoothScrollTo(columnElement);
+// });
+
+link4.addEventListener("click", () => {
+  // Rola para o primeiro elemento com classe "header"
+  const headerElement = document.querySelector(".column");
+  smoothScrollTo(headerElement);
 });
 
 

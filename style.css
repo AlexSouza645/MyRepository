@@ -131,10 +131,10 @@ header .image {
 header .image::before {
   content: "o";
   position: absolute;
-  top: -40px;
+  top: -15px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 42rem;
+  font-size: 34rem;
   font-weight: 400;
   line-height: 20rem;
   color: #1d4ed8;
@@ -282,9 +282,10 @@ color:#ccc
   color:#fff;
   background-color: transparent;
   border: 2px solid #fff;
-  margin-top:3rem;
+  margin-top:2rem;
   justify-content: center;
-  margin-bottom:0.2rem;
+  margin-bottom:0rem;
+  
 }
 
 .pricing .card button:hover{
@@ -317,11 +318,19 @@ footer .column .logo{
 footer .column p{
   color:#fff;
   margin-bottom:2rem;
-  text-align:center
+  text-align:center;
+  font-size:1.5rem
+}
+
+footer .column p:hover{
+  color:#fff;
+  background-color:#1d4ed8;
+  border-color:#1d4ed8
 }
 
 footer .column .socials{
-  display:flex;
+  display:grid;
+  grid-template-columns: repeat(1, 1fr 2fr);
   justify-content:center;
   gap : 1rem
 }
@@ -329,12 +338,19 @@ footer .column .socials{
 footer .column .socials a{
   color:#ccc;
   border: 1px solid #ccc;
-  padding: 5px 10px;
-  font-size: 1.25rem;
+  padding: 20px 30px;
+  font-size: 2rem;
   border-radius:100%;
   transition : all 0.3s ease
+  ;
+  position : block
 }
+footer .column .socials p{
 
+text-align:left;Font-size:1.5rem
+
+
+}
 footer .column .socials a:hover{
   color:#fff;
   background-color:#1d4ed8;
