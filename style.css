@@ -298,30 +298,41 @@ footer{
   position:relative;
 
    display: relative;
-  grid-template-columns:400px repeat(3, 1fr);
+  grid-template-columns:1fr 2fr 2 fr;
   gap 2 rem
 }
 footer .column{
 
-  display:flex;
-  justify-content:center;
+  display:grid;
+  align-items:center;
+  grid-template-columns: 1fr 1fr 1fr
+  
 }
 
 footer .column .logo{
-  max-width:300px;
- 
-  margin-bottom:1.2rem 
+  max-width:200px; 
+  margin-bottom:1.2rem;
+ float: left;
+  
   display:flex;
-  justify-content:center
+  align-items: center;
+  justify-content: flex-start;
 }
 
 footer .column p{
   color:#fff;
   margin-bottom:2rem;
   text-align:center;
-  font-size:1.5rem
+  font-size:1.5rem;
+  float:center
 }
 
+
+footer .column .redes{
+margin-bottom:10px;
+float: left
+
+}
 footer .column p:hover{
   color:#fff;
   background-color:#1d4ed8;
@@ -330,18 +341,19 @@ footer .column p:hover{
 
 footer .column .socials{
   display:grid;
-  grid-template-columns: repeat(1, 1fr 2fr);
+  grid-template-columns: repeat(2, 1fr 2fr);
   justify-content:center;
-  gap : 1rem
+  gap : 1rem;
+  float: left
 }
 
 footer .column .socials a{
   color:#ccc;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   padding: 20px 30px;
   font-size: 2rem;
-  border-radius:100%;
-  transition : all 0.3s ease
+  border-radius:50%;
+  transition : all 0.4s ease
   ;
   position : block
 }
@@ -364,7 +376,7 @@ footer .column h4{
   font-weight:500;
 }
 
-footer .column > a{
+footer .column  a{
   display:block;
   color:#fff;
   margin-bottom:1rem;
@@ -408,14 +420,16 @@ footer .container{
   }
 
   footer{
-    grid-template-columns: 1fr 200px
+    grid-template-columns: 1fr 100px
   }
 
-
+  footer .container .logo{
+    max-width:150px; 
+  }
 
 }
 
-@media (width <600px){
+@media (width < 600px){
   header .image::before{
     display:none
   }
@@ -428,7 +442,33 @@ footer .container{
     grid-template-columns:repeat(1,1fr)
   }
 
-  footer{
-    grid-template-columns: 1fr 150px
+  footer .socials{
+    display:grid;
+    grid-template-columns :1fr 100px
   }
+
+  footer .container .logo{
+    min-width:100px; 
+  }
+
+  footer .socials p{
+    display:none
+  }
+
+  footer .socials a {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+
+  }
+
+   .socials a i {
+    margin-bottom: 0; /* Remove spacing between icon and text */
+    margin-right: 5px; /* Spacing between icon and link */
+  }
+
+  
+
+
 }
