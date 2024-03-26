@@ -284,40 +284,62 @@ section .header {
 
 
 /* estilização meus projetos */
-.project  h2{
+.project  h2 {
   display: flex;
   justify-content: center;
-  color:#fff;
-  position: relative
+  color: #fff;
+  position: relative;
 }
 
-.project  .aplication{
+.project  .aplication {
   display: flex;
   justify-content: center;
-  color:#fff;
-  position: relative
+  color: #fff;
+  position: relative;
 }
 
 .project .fix {
-
-  display : flex;
+  display: flex;
   flex-direction: row;
-  color:#fff;
+  color: #fff;
   gap: 1rem;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
- .project .fix .projetoGeral{
+.project .fix .projetoGeral {
   flex-direction: columns;
   border: 2px solid blue;
-  border-radius: 15px;
-  transition: all 0.3s ease;
+  border-radius: 50px;
+  f: all 0.3s ease;
   width: 26rem;
   height: 20rem;
   padding: 3rem 2 rem;
-text-align:center}
+  text-align: center;
+}
 
- 
+.projetoGeralHeader {
+  /* Estilos existentes do projetoGeralHeader */
+  display: flex; /* Ativa o Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.fix .botao-com-imagem {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.botao-com-imagem img {
+  width: 50%;
+  height: auto;
+}
+
+
+
+
 /* Footer Style */
 footer {
   position: relative;
