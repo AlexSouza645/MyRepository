@@ -226,7 +226,7 @@ section .header {
   background-color: #27272a;
   display: flex;
   flex-direction: columns;
-  border: 2px solid transparent;
+  border: 2px solid blue;
   border-radius: 15px;
   transition: all 0.3s ease;
 }
@@ -385,7 +385,7 @@ footer .column p:hover {
 
 footer .column .socials {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 1rem;
 }
 
@@ -463,8 +463,16 @@ footer .container {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .project .fix {
+    flex-wrap:wrap
+  }
+
   footer {
     grid-template-columns: 1fr 100px;
+  }
+  
+  footer .socials {
+  flex-wrap:wrap
   }
 
   footer .container .logo {
@@ -485,9 +493,12 @@ footer .container {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .fix {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   footer .socials {
-    display: grid;
-    grid-template-columns: 1fr 100px;
+    flex-wrap:wrap
   }
 
   footer .container .logo {
