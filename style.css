@@ -173,7 +173,7 @@ section .header {
 
 .features .card:hover {
   background-color: #323232;
-  border-color: #fff;
+  border-color: blue;
 }
 
 .features .card span {
@@ -226,14 +226,15 @@ section .header {
   background-color: #27272a;
   display: flex;
   flex-direction: columns;
-  border: 2px solid blue;
+  border: 2px solid white;
   border-radius: 15px;
   transition: all 0.3s ease;
 }
 
 .pricing .card:hover {
   background-color: #323232;
-  border-color: #fff;
+  border-color: blue;
+  border: 2px solid blue;
 }
 
 .pricing .card .content {
@@ -308,13 +309,17 @@ section .header {
 
 .project .fix .projetoGeral {
   flex-direction: columns;
-  border: 2px solid blue;
+  border: 2px solid white;
   border-radius: 50px;
   f: all 0.3s ease;
   width: 26rem;
   height: 20rem;
   padding: 3rem 2 rem;
   text-align: center;
+}
+
+.project .fix .projetoGeral:hover{
+  border: 2px solid blue;
 }
 
 .projetoGeralHeader {
@@ -332,8 +337,23 @@ section .header {
   justify-content: center;
 }
 
+.fix .botao-com-imagem2 {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+}
+
 .botao-com-imagem img {
-  width: 50%;
+  width: 90%;
+  height: auto;
+}
+
+.botao-com-imagem2 img {
+  width: 67%;
   height: auto;
 }
 
