@@ -37,11 +37,11 @@ link2.addEventListener("click", () => {
   }
 });
 
-// link3.addEventListener("click", () => {
-//   // Rola para o primeiro elemento com classe "column"
-//   const columnElement = document.querySelector(".column");
-//   smoothScrollTo(columnElement);
-// });
+link3.addEventListener("click", () => {
+  // Rola para o primeiro elemento com classe "column"
+  const columnElement = document.querySelector(".project");
+  smoothScrollTo(columnElement);
+});
 
 link4.addEventListener("click", () => {
   // Rola para o primeiro elemento com classe "header"
