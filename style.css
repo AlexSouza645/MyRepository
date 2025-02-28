@@ -84,6 +84,15 @@ nav {
   padding: 5rem 2rem;
 }
 
+.container h2{
+
+  font-size: 2.5rem;
+}
+
+.container p {
+  font-size: 1.5rem;
+}
+
 .blur {
   position: absolute;
   box-shadow: 0 0 1000px 50px #1d4ed8;
@@ -181,7 +190,7 @@ section .header {
   background-color: #1e40af;
   padding: 2px 9px;
   margin-bottom: 1rem;
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   color: #fff;
   border-radius: 5px;
 }
@@ -222,13 +231,14 @@ section .header {
 }
 
 .pricing .card {
+  display: flex;
   padding: 3rem 2 rem;
   background-color: #27272a;
-  display: flex;
-  flex-direction: columns;
+  flex-direction: column;
   border: 2px solid white;
   border-radius: 15px;
   transition: all 0.3s ease;
+  align-items: center;
 }
 
 .pricing .card:hover {
@@ -247,6 +257,7 @@ section .header {
   color: #fff;
   font-size: 2rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .pricing .card h3 {
@@ -261,6 +272,7 @@ section .header {
 .pricing .card p {
   color: #fff;
   margin-top: 2.5rem;
+  text-align: center;
 }
 
 .pricing .card p i {
@@ -274,8 +286,8 @@ section .header {
   background-color: transparent;
   border: 2px solid #fff;
   margin-top: 2rem;
-  justify-content: center;
   margin-bottom: 0rem;
+  margin-left: 2rem;
 }
 
 .pricing .card button:hover {
@@ -318,7 +330,7 @@ section .header {
   text-align: center;
 }
 
-.project .fix .projetoGeral:hover{
+.project .fix .projetoGeral:hover {
   border: 2px solid blue;
 }
 
@@ -344,7 +356,6 @@ section .header {
   cursor: pointer;
   display: flex;
   justify-content: center;
-
 }
 
 .botao-com-imagem img {
@@ -484,15 +495,15 @@ footer .container {
   }
 
   .project .fix {
-    flex-wrap:wrap
+    flex-wrap: wrap;
   }
 
   footer {
     grid-template-columns: 1fr 100px;
   }
-  
+
   footer .socials {
-  flex-wrap:wrap
+    flex-wrap: wrap;
   }
 
   footer .container .logo {
@@ -518,7 +529,7 @@ footer .container {
   }
 
   footer .socials {
-    flex-wrap:wrap
+    flex-wrap: wrap;
   }
 
   footer .container .logo {
